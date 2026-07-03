@@ -484,6 +484,7 @@ nav{padding:18px 0;flex:1;}
     <div class="hero-right fi2">
       <div class="ri-card">
         <div class="ri-card-title">Research Interests</div>
+        <div class="ri-item"><div class="ri-dot red"></div><div class="ri-text">RISC-V-based Multicore Processor Architecture and Design</div></div>
         <div class="ri-item"><div class="ri-dot blue"></div><div class="ri-text">Hardware Accelerators for Neural Network Applications</div></div>
         <div class="ri-item"><div class="ri-dot brown"></div><div class="ri-text">Approximate Computing</div></div>
         <div class="ri-item"><div class="ri-dot green"></div><div class="ri-text">Security — Fully Homomorphic Encryption (FHE)</div></div>
@@ -675,39 +676,85 @@ nav{padding:18px 0;flex:1;}
       </div>
     </div>
 
-    <!-- Block 2: Advanced Integration -->
-    <div class="research-block fi fi2">
-      <div class="rb-visual">
-        <div class="rb-photo grad2">
-          <img
-            src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=640&q=80"
-            alt="Server network — Integration"
-            onerror="this.style.display='none'">
-        </div>
-        <div class="intg">
-          <div class="intg-row">
-            <div class="ibox hl">Compute/Memory/<br>NMC/IMC Chiplets</div>
-            <div class="iarr">→</div>
-            <div class="ibox">DRAM</div>
-          </div>
-          <div class="intg-row" style="margin-top:4px;">
-            <div class="ibox" style="flex:1.2;">Optical IO Chiplets</div>
-            <div class="iarr">↔</div>
-            <div class="ibox" style="flex:1.2;">Card 1 · Node 1–N</div>
-          </div>
-          <div class="intg-note">UCIe 2.5D &gt;106 Tbps · &lt;0.1ns · &lt;0.1pJ/bit<br>Optical links &gt;4 Tbps · &lt;5ns · &lt;5pJ/bit</div>
-        </div>
-      </div>
-      <div class="rb-content">
-        <div class="rb-title red">Advanced Integration &amp; Interconnects</div>
-        <ul class="rb-list">
-          <li>Chiplets (2.5D and 3D)</li>
-          <li>Heterogeneous Integration</li>
-          <li>Network-on-Chips (NoC)</li>
-          <li>Network-on-Interposer (NoI)</li>
-        </ul>
-      </div>
+<!-- Block 2: Approximate Computing -->
+<div class="research-block se">
+  <div class="rb-visual">
+    <div class="rb-photo grad2">
+      <img
+        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=640&q=80"
+        alt="Approximate Computing and AI Hardware"
+        onerror="this.style.display='none'">
     </div>
+
+    <div class="chip-tags">
+      <div class="chip-tag"><strong>LUT-MAC</strong> Edge AI</div>
+      <div class="chip-tag"><strong>ApproxMAC</strong> ISVLSI'26</div>
+      <div class="chip-tag"><strong>Quantized AI</strong> INT8/INT16</div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
+      <span style="background:var(--white);border:1px solid var(--border2);border-radius:3px;padding:3px 8px;font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--ink3);">Approximate Arithmetic</span>
+
+      <span style="background:var(--white);border:1px solid var(--border2);border-radius:3px;padding:3px 8px;font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--ink3);">LUT Computing</span>
+
+      <span style="background:var(--white);border:1px solid var(--border2);border-radius:3px;padding:3px 8px;font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--ink3);">Operand Compression</span>
+
+      <span style="background:var(--white);border:1px solid var(--border2);border-radius:3px;padding:3px 8px;font-family:'JetBrains Mono',monospace;font-size:9px;color:var(--ink3);">Energy Efficiency</span>
+    </div>
+  </div>
+
+  <div class="rb-content">
+
+    <div class="rb-title">
+      Approximate Computing &amp; Energy-Efficient AI
+    </div>
+
+    <a class="rb-overview-link"
+       onclick="openModal('research-approx')">
+       ⓘ Read my current research focus →
+    </a>
+
+    <ul class="rb-list">
+      <li>Approximate Computing Strategies</li>
+      <li>LUT-Based MAC Architectures</li>
+      <li>Precision Scalable Computing</li>
+      <li>Hardware-Efficient Neural Networks</li>
+    </ul>
+
+    <div class="rb-works">
+
+      <div class="rb-works-label">
+        Featured Research Works
+      </div>
+
+      <div class="rb-work-item"
+           onclick="openModal('research-lutmac')">
+        <span class="wt">
+          LUT-Based Approximate Multiply-Accumulate Architecture
+        </span>
+        <span class="wa">View →</span>
+      </div>
+
+      <div class="rb-work-item"
+           onclick="openModal('research-tanh')">
+        <span class="wt">
+          LUT-Based Activation Functions for Edge AI
+        </span>
+        <span class="wa">View →</span>
+      </div>
+
+      <div class="rb-work-item"
+           onclick="openModal('research-quant')">
+        <span class="wt">
+          Precision-Aware Quantization &amp; Operand Compression
+        </span>
+        <span class="wa">View →</span>
+      </div>
+
+    </div>
+
+  </div>
+</div>
 
     <!-- Block 3: Agile Design -->
     <div class="research-block fi fi3">
